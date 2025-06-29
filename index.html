@@ -156,15 +156,17 @@ const h1en = document.getElementById("h1en");
 const estext = document.getElementById("estext");
 const entext = document.getElementById("entext");
 
-alert(estext.style.display);
 
 
- esbar.style.display = "block";
- enbar.style.display = "none";
- h1es.style.display = "block";
- h1en.style.display = "none";
- estext.style.display = "block";
- entext.style.display = "none";
+window.getComputedStyle(esbar).display = "block";
+window.getComputedStyle(enbar).display = "none";
+window.getComputedStyle(h1es).display = "block";
+window.getComputedStyle(h1en).display = "none";
+window.getComputedStyle(estext).display = "block";
+window.getComputedStyle(entext).display = "none";
+
+
+
 
 
   } 
