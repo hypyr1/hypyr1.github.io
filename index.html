@@ -10,9 +10,22 @@
 
 body {
   font-family: Helvetica, sans-serif;
+  font-color: #ccc
   padding: 5%;
   background: #000;
 
+}
+
+h1 {
+  font-color: #fff;
+}
+
+.es {
+  display: none;
+}
+
+.en {
+  display: block;
 }
 
 /* set height and width to the biggest slide in the series */
@@ -91,6 +104,9 @@ body {
 
 <body>
 
+<h1 class="en">Playa Blanca Panama Apartment for Sale with Amazing View</h1>
+<h1 class="es">Apartamento en Venta Terrazas, Playa Blanca, Panamá con Vista Hermosa</h1>
+
 <div id="slideshow">
   <div class="slide-wrapper">
     <div class="slide"><img src="img/01.jpg" width="100%" height="100%"> </div>
@@ -100,7 +116,13 @@ body {
   </div>
 </div>
 
+<div class="en">
+<p>EN Text goes here.</p>
+</div>
 
+<div class="es">
+<p>ES aqui.</p>
+</div>
 
 <!--
 <li class="splide__slide">
