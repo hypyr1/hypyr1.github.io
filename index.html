@@ -137,12 +137,19 @@ h1 {
 
 <script>
 
+function toggleVisibility(elementId) {
+  const element = document.getElementById(elementId);
+  if (element.style.visibility === 'hidden') {
+    element.style.visibility = 'visible';
+  } else {
+    element.style.visibility = 'hidden';
+  }
+}
 
 </script>
 
 
 </head>
-
 
 
 
@@ -153,7 +160,7 @@ h1 {
 <img src="img/eng.png" width="40px" height="40px"/>
 <span>English</span>
 
-<a href="#"><img src="img/esp.png" width="40px" height="40px"/>
+<a href="#" onclick="toggleVisibility('es')"><img src="img/esp.png" width="40px" height="40px"/>
 <span>Haga clic aquí para español</span></a>
 
 </div>
@@ -161,10 +168,10 @@ h1 {
 
 <div class="lang es">
 
-<a href="#"><img src="img/eng.png" width="40px" height="40px"/>
+<a href="#" onclick="toggleVisibility('en')"><img src="img/eng.png" width="40px" height="40px"/>
 <span>Click here for english</span></a>
 
-<img src="img/esp.png" width="40px" height="40px"/>
+<img src="img/esp.png" width="40px" height="40px"/><
 <span>Español</span>
 
 </div>
