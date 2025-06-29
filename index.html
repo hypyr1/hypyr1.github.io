@@ -59,10 +59,10 @@ h1 {
 .es {
 
   color: #ccc !important;
-  display: block;
+  display: none;
   margin: 20px auto;
   text-align: center;
-  visibility: visible;
+
 }
 
 .en {
@@ -71,7 +71,6 @@ h1 {
   display: block;
   margin: 20px auto;
   text-align: center;
-  visibility: hidden;
 }
 
 /* set height and width to the biggest slide in the series */
@@ -139,16 +138,15 @@ h1 {
 
 <script>
 
-function toggleVisibility(elementClass) {
-  const element = document.getElementByClassName(elementClass);
-  if (element.style.className === 'es') {
-    element.style.visibility = 'visible';
-    document.getElementByClassName('en').visibility = 'hidden';
 
-  } else {
-    element.style.visibility = 'visible';
-    document.getElementByClassName('es').visibility = 'hidden';
-  }
+
+function toggleVisibility(elementClassName) {
+  const element = document.getElementByClassName(elementClassName);
+  
+
+    element.style.display = 'block';
+
+
 }
 
 </script>
@@ -165,7 +163,7 @@ function toggleVisibility(elementClass) {
 <img src="img/eng.png" width="40px" height="40px"/>
 <span>English</span>
 
-<a href="#" onclick="toggleVisibility('es')"><img src="img/esp.png" width="40px" height="40px"/>
+<a onclick="toggleVisibility('es')"><img src="img/esp.png" width="40px" height="40px"/>
 <span>Haga clic aquí para español</span></a>
 
 </div>
@@ -173,7 +171,7 @@ function toggleVisibility(elementClass) {
 
 <div class="lang es">
 
-<a href="#" onclick="toggleVisibility('en')"><img src="img/eng.png" width="40px" height="40px"/>
+<a onclick="toggleVisibility('en')"><img src="img/eng.png" width="40px" height="40px"/>
 <span>Click here for english</span></a>
 
 <img src="img/esp.png" width="40px" height="40px"/>
