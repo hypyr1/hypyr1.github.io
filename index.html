@@ -14,24 +14,33 @@ body {
 
 }
 
+/* set height and width to the biggest slide in the series */
+
 #slideshow {
   text-align: center;
   overflow: hidden;
-  height: 510px;
-  width: 728px;
+  height: 1280px;
+  width: 960px;
   margin: 0 auto;
+
 }
 
 .slide-wrapper {
-  width: 2912px;
+  width: 3840px; /* this needs to equal the total width of all the slides combined */
   -webkit-animation: slide 18s ease infinite;
 }
 
+/* set height and width to the biggest slide in the series */
+
 .slide {
   float: left;
-  height: 510px;
-  width: 728px;
+  height: 1280px;
+  width: 960px;
+
 }
+
+
+/* repeat .slide:nth-child for each slide to specify individual styles for each slide */
 
 .slide:nth-child(1) {
   background: #D93B65;
@@ -49,11 +58,6 @@ body {
   background: #D9D055;
 }
 
-.slide-number {
-  color: #000;
-  text-align: center;
-  font-size: 10em;
-}
 
 @-webkit-keyframes slide {
   20% {margin-left: 0px;}
@@ -88,7 +92,6 @@ body {
     <div class="slide"><img src="img/02.jpg"  width="825" height="1279"></div>
     <div class="slide"><img src="img/02.5.jpg"  width="960" height="1280"></div>
     <div class="slide"><img src="img/03.jpg"   width="1280" height="960"></div>
-    <div class="slide"><img src="img/04.jpg"   width="1280" height="960"></div>
   </div>
 </div>
 
