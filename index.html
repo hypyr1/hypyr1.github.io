@@ -4,41 +4,17 @@
 <head>
 <style>
 
-#slideshow {
-  margin: 80px auto;
-  padding: 10px;
-  position: relative;
-  width: 1280px;
-  height: 960px;
+.splide__slide img {
+  width: 100%;
+  height: auto;
 }
-
-#slideshow > div {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-}
-
-img {width: 25%;}
-
 </style>
 
 
 <script>
-
-
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function() {
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-}, 3000);
-
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-slider' ).mount();
+  } );
 </script>
 
 
@@ -50,95 +26,59 @@ setInterval(function() {
 
 <body>
 
+<div id="image-slider" class="splide">
+  <div class="splide__track">
+		<ul class="splide__list">
 
 
-<div id="slideshow">
+<li class="splide__slide">
+     <img src="img/01.jpg"></li>
+  <li class="splide__slide">
+     <img src="img/02.jpg"></li>
+<li class="splide__slide">
+     <img src="img/02.5.jpg"></li>
+<li class="splide__slide">
+     <img src="img/03.jpg"></li>
+   <li class="splide__slide">
+     <img src="img/04.jpg"></li>
+<li class="splide__slide">
+     <img src="img/05.jpg"></li>
+   <li class="splide__slide">
+     <img src="img/06.jpg"></li>
+  <li class="splide__slide">
+     <img src="img/07.jpg"></li>
+ <li class="splide__slide">
+     <img src="img/08.jpg"></li>
+   <li class="splide__slide">
+     <img src="img/09.jpg"></li>
+  <li class="splide__slide">
+     <img src="img/10.jpg"></li>
+  <li class="splide__slide">
+     <img src="img/11.jpg"></li>
+  <li class="splide__slide">
+     <img src="img/12.jpg"></li>
+<li class="splide__slide">
+     <img src="img/13.jpg"></li>
+ <li class="splide__slide">
+     <img src="img/14.jpg"></li>
+<li class="splide__slide">
+     <img src="img/15.jpg"></li>
+<li class="splide__slide">
+     <img src="img/16.jpg"></li>
+<li class="splide__slide">
+     <img src="img/17.jpg"></li>
+<li class="splide__slide">
+     <img src="img/18.jpg"></li>
+<li class="splide__slide">
+     <img src="img/19.jpg"></li>
 
-   <div>
-     <img src="img/01.jpg">
-   </div>
-
-   <div>
-     <img src="img/02.jpg">
-   </div>
-
-   <div>
-     <img src="img/02.5.jpg">
-   </div>
-
-   <div>
-     <img src="img/03.jpg">
-   </div>
-
-   <div>
-     <img src="img/04.jpg">
-   </div>
-
-   <div>
-     <img src="img/05.jpg">
-   </div>
-
-   <div>
-     <img src="img/06.jpg">
-   </div>
-
-   <div>
-     <img src="img/07.jpg">
-   </div>
-
-   <div>
-     <img src="img/08.jpg">
-   </div>
-
-   <div>
-     <img src="img/09.jpg">
-   </div>
-
-   <div>
-     <img src="img/10.jpg">
-   </div>
-
-   <div>
-     <img src="img/11.jpg">
-   </div>
-
-   <div>
-     <img src="img/12.jpg">
-   </div>
-
-   <div>
-     <img src="img/13.jpg">
-   </div>
-
-   <div>
-     <img src="img/14.jpg">
-   </div>
-
-   <div>
-     <img src="img/15.jpg">
-   </div>
-
-   <div>
-     <img src="img/16.jpg">
-   </div>
-
-   <div>
-     <img src="img/17.jpg">
-   </div>
-
-   <div>
-     <img src="img/18.jpg">
-   </div>
-
-   <div>
-     <img src="img/19.jpg">
-   </div>
-
-
-
-   <div>
-   </div>
+		</ul>
+  </div>
 </div>
+
+
+
+
 
 </body>
 </html>
