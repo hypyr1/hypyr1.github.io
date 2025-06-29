@@ -22,7 +22,7 @@ text-decoration: underline;
 
 }
 
-#lang {
+.lang {
   display: block;
   float: right;
   clear: both;
@@ -30,7 +30,7 @@ text-decoration: underline;
 
 }
 
-#lang img {
+.lang img {
   display: block;
   float: right;
   color: #fff;
@@ -40,7 +40,7 @@ text-decoration: underline;
 
 }
 
-#lang span {
+.lang span {
   display: block;
   float: right;
   padding: 0 0 10px 10px;
@@ -59,7 +59,7 @@ h1 {
 .es {
 
   color: #ccc !important;
-  display: none;
+  display: none !important;
   margin: 20px auto;
   text-align: center;
 }
@@ -148,7 +148,7 @@ h1 {
 
 <body>
 
-<div id="lang" class="en">
+<div class="lang en">
 
 <img src="img/eng.png" width="40px" height="40px"/>
 <span>English</span>
@@ -159,7 +159,7 @@ h1 {
 </div>
 
 
-<div id="lang" class="es">
+<div class="lang es">
 
 <a href="#"><img src="img/eng.png" width="40px" height="40px"/>
 <span>Click here for english</span></a>
