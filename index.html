@@ -141,14 +141,16 @@ h1 {
 function toggleVisibility(elementId) {
   const element = document.getElementById(elementId);
 
+ alert(elementId);
+
   if (element == 'es') {
-    alert(element);
+    alert('es');
 
   } 
 
 
 else if (element == 'en') {
-    alert(element);
+    alert('en');
 
   }
 
@@ -167,7 +169,7 @@ else if (element == 'en') {
 
 <body>
 
-<div id="en" class="lang">
+<div id="en" class="lang en">
 
 <img src="img/eng.png" width="40px" height="40px"/>
 <span>English</span>
@@ -178,7 +180,7 @@ else if (element == 'en') {
 </div>
 
 
-<div id="es" class="lang">
+<div id="es" class="lang es">
 
 <a onclick="toggleVisibility('en')"><img src="img/eng.png" width="40px" height="40px"/>
 <span>Click here for english</span></a>
@@ -204,11 +206,11 @@ else if (element == 'en') {
   </div>
 </div>
 
-<div id="entext">
+<div id="entext" class="en">
 <p>EN Text goes here.</p>
 </div>
 
-<div id="estext">
+<div id="estext" class="es">
 <p>ES aqui.</p>
 </div>
 
