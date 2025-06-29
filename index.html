@@ -59,7 +59,6 @@ h1 {
 .es {
 
   color: #ccc !important;
-  display: none !important;
   margin: 20px auto;
   text-align: center;
 
@@ -68,7 +67,6 @@ h1 {
 .en {
 
   color: #ccc !important;
-  display: block !important;
   margin: 20px auto;
   text-align: center;
 }
@@ -157,16 +155,12 @@ const estext = document.getElementById("estext");
 const entext = document.getElementById("entext");
 
 
-
-window.getComputedStyle(esbar).display = "block";
-window.getComputedStyle(enbar).display = "none";
-window.getComputedStyle(h1es).display = "block";
-window.getComputedStyle(h1en).display = "none";
-window.getComputedStyle(estext).display = "block";
-window.getComputedStyle(entext).display = "none";
-
-
-
+ esbar.style.display = "block";
+ enbar.style.display = "none";
+ h1es.style.display = "block";
+ h1en.style.display = "none";
+ estext.style.display = "block";
+ entext.style.display = "none";
 
 
   } 
@@ -199,7 +193,7 @@ else {
 
 <body>
 
-<div id="enbar" class="lang en">
+<div id="enbar" class="lang en" style="display: block;">
 
 <img src="img/eng.png" width="40px" height="40px"/>
 <span>English</span>
@@ -210,7 +204,7 @@ else {
 </div>
 
 
-<div id="esbar" class="lang es">
+<div id="esbar" class="lang es" style="display: none;">
 
 <a onclick="toggleVisibility('en')"><img src="img/eng.png" width="40px" height="40px"/>
 <span>Click here for english</span></a>
@@ -224,8 +218,8 @@ else {
 <br/>
 <br/>
 
-<h1 id="h1en" class="en">Playa Blanca Panama Apartment for Sale with Amazing View</h1>
-<h1 id="h1es" class="es">Apartamento en Venta Terrazas, Playa Blanca, Panamá con Vista Hermosa</h1>
+<h1 id="h1en" class="en" style="display: block;">Playa Blanca Panama Apartment for Sale with Amazing View</h1>
+<h1 id="h1es" class="es" style="display: none;">Apartamento en Venta Terrazas, Playa Blanca, Panamá con Vista Hermosa</h1>
 
 <div id="slideshow">
   <div class="slide-wrapper">
@@ -236,11 +230,11 @@ else {
   </div>
 </div>
 
-<div id="entext" class="en">
+<div id="entext" class="en" style="display: block;">
 <p>EN Text goes here.</p>
 </div>
 
-<div id="estext" class="es">
+<div id="estext" class="es" style="display: none;">
 <p>ES aqui.</p>
 </div>
 
