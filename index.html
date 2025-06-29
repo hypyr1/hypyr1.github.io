@@ -137,8 +137,8 @@ h1 {
 
 <script>
 
-function toggleVisibility(elementId) {
-  const element = document.getElementById(elementId);
+function toggleVisibility(elementClass) {
+  const element = document.getElementByClassName(elementClass);
   if (element.style.visibility === 'hidden') {
     element.style.visibility = 'visible';
   } else {
