@@ -22,12 +22,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
 <script>
+
+var splide = new Splide( '.splide', {
+  autoplay    : true,
+  rewind      : true,
+  pauseOnHover: false,
+  pauseOnFocus: false,
+} );
+
   document.addEventListener( 'DOMContentLoaded', function () {
     new Splide( '#image-slider' ).mount();
  var Autoplay = splide.Components.Autoplay;
 
 Autoplay.play();
-
+} );
 
 </script>
 
