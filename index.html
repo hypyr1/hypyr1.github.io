@@ -142,8 +142,6 @@ function toggleVisibility(elementId) {
 
 
 
-
-const element = document.getElementById(elementId);
 const esbar = document.getElementById('esbar');
 const enbar = document.getElementById('enbar');
 const h1es = document.getElementById('h1es');
@@ -152,9 +150,11 @@ const estext = document.getElementById('estext');
 const entext = document.getElementById('entext');
 
 
-  alert(element);
+  
 
-  if (element === 'es') {
+  if (elementId === 'es') {
+
+alert(elementId);
 
 
  esbar.style.display = 'block';
