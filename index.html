@@ -140,26 +140,37 @@ h1 {
 
 function toggleVisibility(elementId) {
   const element = document.getElementById(elementId);
-
+const esbar = document.getElementById('esbar');
+const enbar = document.getElementById('enbar');
+const h1es = document.getElementById('h1es');
+const h1en = document.getElementById('h1en');
+const estext = document.getElementById('estext');
+const entext = document.getElementById('entext');
 
   if (element == 'es') {
-    document.getElementById('esbar').style.display('block');
-    document.getElementById('enbar').style.display('none');
-    document.getElementById('h1es').style.display('block');
-    document.getElementById('h1en').style.display('none');
-    document.getElementById('estext').style.display('block');
-    document.getElementById('entext').style.display('none');
+
+
+
+ esbar.style.display = 'block';
+ enbar.style.display = 'none';
+ h1es.style.display = 'block';
+ h1en.style.display = 'none';
+ estext.style.display = 'block';
+ entext.style.display = 'none';
+
 
   } 
 
 
 else {
-    document.getElementById('esbar').style.display('none');
-    document.getElementById('enbar').style.display('block');
-    document.getElementById('h1es').style.display('none');
-    document.getElementById('h1en').style.display('block');
-    document.getElementById('estext').style.display('none');
-    document.getElementById('entext').style.display('block');
+
+ esbar.style.display = 'none';
+ enbar.style.display = 'block';
+ h1es.style.display = 'none';
+ h1en.style.display = 'block';
+ estext.style.display = 'none';
+ entext.style.display = 'block';
+
 
   }
 
