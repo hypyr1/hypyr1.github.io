@@ -141,16 +141,25 @@ h1 {
 function toggleVisibility(elementId) {
   const element = document.getElementById(elementId);
 
- alert(elementId);
 
   if (element == 'es') {
-    alert('es');
+    document.getElementById('esbar').style.display('block');
+    document.getElementById('enbar').style.display('none');
+    document.getElementById('h1es').style.display('block');
+    document.getElementById('h1en').style.display('none');
+    document.getElementById('estext').style.display('block');
+    document.getElementById('entext').style.display('none');
 
   } 
 
 
-else if (element == 'en') {
-    alert('en');
+else {
+    document.getElementById('esbar').style.display('none');
+    document.getElementById('enbar').style.display('block');
+    document.getElementById('h1es').style.display('none');
+    document.getElementById('h1en').style.display('block');
+    document.getElementById('estext').style.display('none');
+    document.getElementById('entext').style.display('block');
 
   }
 
@@ -169,7 +178,7 @@ else if (element == 'en') {
 
 <body>
 
-<div id="en" class="lang en">
+<div id="enbar" class="lang en">
 
 <img src="img/eng.png" width="40px" height="40px"/>
 <span>English</span>
@@ -180,7 +189,7 @@ else if (element == 'en') {
 </div>
 
 
-<div id="es" class="lang es">
+<div id="esbar" class="lang es">
 
 <a onclick="toggleVisibility('en')"><img src="img/eng.png" width="40px" height="40px"/>
 <span>Click here for english</span></a>
