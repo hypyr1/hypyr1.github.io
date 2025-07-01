@@ -10,19 +10,6 @@
 
 
 
-// Config - change these values to customise the gallery
-$gridValue: 4px;
-$min-img-width: 300px;
-$max-img-width: 800px;
-$max-img-height: 500px;
-$max-img-num: 8;
-$accent-color: #33c6eb;
-
-* {
-  box-sizing: border-box;
-}
-
-
 body {
   font-family: arial, sans-serif;
   color: #ccc;
@@ -38,121 +25,11 @@ text-decoration: underline;
 
 }
 
-img.gallery__img {
-  max-width: 100%;
-  vertical-align: top;
+img {
+display: block;
+float: left;
+padding-right: 10px;
 }
-
-.gallery {
-  display: flex;
-  flex-flow: column;
-  gap: $gridValue * 2;
-  margin: $gridValue * 2 auto;
-  max-width: $max-img-width;
-  min-width: $min-img-width;
-  position: relative;
-  padding-top: calc(
-    #{$max-img-height/$max-img-width * 100%} + #{$gridValue * 2}
-  );
-
-  @media screen and (min-width: $max-img-width) {
-    padding-top: calc(#{$max-img-height} + #{$gridValue * 2});
-  }
-}
-
-.gallery__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: $gridValue * 2;
-}
-
-.gallery__nav {
-  display: flex;
-  justify-content: center;
-  gap: $gridValue;
-}
-
-.gallery__thumb {
-  display: block;
-  flex: 0 0 auto;
-  width: calc(20% - #{$gridValue});
-  scroll-snap-align: start;
-  padding: $gridValue;
-  cursor: pointer;
-
-  img {
-    border-radius: $gridValue;
-    box-shadow: 0 0 0 0 $accent-color;
-    transition: box-shadow 0.3s cubic-bezier(0.41, -0.01, 0.33, 1.69);
-  }
-}
-
-.gallery__items {
-  display: flex;
-  gap: $gridValue;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding-bottom: $gridValue * 2;
-  scroll-snap-type: x mandatory;
-
-  &::-webkit-scrollbar {
-    height: $gridValue * 2;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: $gridValue;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #606aa9;
-    border-radius: $gridValue;
-  }
-}
-
-.gallery__selector {
-  margin: 0;
-  position: relative;
-  appearance: none;
-
-  &::after {
-    content: "";
-    display: block;
-    width: $gridValue * 2;
-    height: $gridValue * 2;
-    margin: $gridValue;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  &:checked {
-    &::after {
-      outline-offset: 2px;
-      background-color: $accent-color;
-      outline: 2px solid rgba(255, 255, 255, 0.1);
-    }
-    + .gallery__img {
-      opacity: 1;
-    }
-  }
-}
-
-@for $i from 1 through $max-img-num {
-  .gallery:has(#img-#{$i}:checked) label[for="img-#{$i}"] img {
-    box-shadow: 0 0 0 4px $accent-color;
-  }
-}
-
-
-
-
-
-
-
 
 
 
@@ -162,39 +39,28 @@ img.gallery__img {
 
 <body>
 
-<br /><br /><br />
-<section class="gallery">
-  <nav class="gallery__nav">
-    <input type="radio" id="img-1" checked name="gallery" class="gallery__selector" />
-    <img class="gallery__img" src="img/01.jpg?q=90&w=640&h=480&auto=format&fit=crop" width="640" height"480" alt="" />
-    <input type="radio" id="img-2" name="gallery" class="gallery__selector" />
-    <img class="gallery__img" src="img/02.jpg?q=90&w=640&h=480&auto=format&fit=crop" width="640" height"480" alt="" />
-    <input type="radio" id="img-3" name="gallery" class="gallery__selector" />
-    <img class="gallery__img" src="img/03.jpg?q=90&w=640&h=480&auto=format&fit=crop" width="640" height"480" alt="" />
-    <input type="radio" id="img-4" name="gallery" class="gallery__selector" />
-    <img class="gallery__img" src="img/04.jpg?q=90&w=640&h=480&auto=format&fit=crop" width="640" height"480" alt="" />
-    <input type="radio" id="img-5" name="gallery" class="gallery__selector" />
-    <img class="gallery__img" src="img/05.jpg?q=90&w=640&h=480&auto=format&fit=crop" width="640" height"480" alt="" />
-    <input type="radio" id="img-6" name="gallery" class="gallery__selector" />
-    <img class="gallery__img" src="img/06.jpg?q=90&w=640&h=480&auto=format&fit=crop" width="640" height"480" alt="" />
-    <input type="radio" id="img-7" name="gallery" class="gallery__selector" />
-    <img class="gallery__img" src="img/07.jpg?q=90&w=640&h=480&auto=format&fit=crop" width="640" height"480" alt="" />
-    <input type="radio" id="img-8" name="gallery" class="gallery__selector" />
-    <img class="gallery__img" src="img/08.jpg?q=90&w=640&h=480&auto=format&fit=crop" width="640" height"480" alt="" />
-  </nav>
 
-<br /><br /><br />
-  <div class="gallery__items">
-    <label for="img-1" class="gallery__thumb"><img src="img/01.jpg?q=80&w=150&h=94&auto=format&fit=crop" width="150" height"94" alt="" /></label>
-    <label for="img-2" class="gallery__thumb"><img src="img/02.jpg?q=80&w=150&h=94&auto=format&fit=crop" width="150" height"94" alt="" /></label>
-    <label for="img-3" class="gallery__thumb"><img src="img/03.jpg?q=80&w=150&h=94&auto=format&fit=crop" width="150" height"94" alt="" /></label>
-    <label for="img-4" class="gallery__thumb"><img src="img/04.jpg?q=80&w=150&h=94&auto=format&fit=crop" width="150" height"94" alt="" /></label>
-    <label for="img-5" class="gallery__thumb"><img src="img/05.jpg?q=80&w=150&h=94&auto=format&fit=crop" width="150" height"94" alt="" /></label>
-    <label for="img-6" class="gallery__thumb"><img src="img/06.jpg?q=80&w=150&h=94&auto=format&fit=crop" width="150" height"94" alt="" /></label>
-    <label for="img-7" class="gallery__thumb"><img src="img/07.jpg?q=80&w=150&h=94&auto=format&fit=crop" width="150" height"94" alt="" /></label>
-    <label for="img-8" class="gallery__thumb"><img src="img/08.jpg?q=80&w=150&h=94&auto=format&fit=crop" width="150" height"94" alt="" /></label>
-  </div>
 
-</section>
+  <img src="img/01.jpg" width="150" height"94" alt="" />
+  <img src="img/02.jpg" width="150" height"94" alt="" />
+  <img src="img/02.5.jpg" width="150" height"94" alt="" />
+  <img src="img/03.jpg" width="150" height"94" alt="" />
+  <img src="img/04.jpg" width="150" height"94" alt="" />
+  <img src="img/05.jpg" width="150" height"94" alt="" />
+  <img src="img/06.jpg" width="150" height"94" alt="" />
+  <img src="img/07.jpg" width="150" height"94" alt="" />
+  <img src="img/08.jpg" width="150" height"94" alt="" />
+ <img src="img/09.jpg" width="150" height"94" alt="" />
+ <img src="img/10.jpg" width="150" height"94" alt="" />
+ <img src="img/11.jpg" width="150" height"94" alt="" />
+ <img src="img/12.jpg" width="150" height"94" alt="" />
+ <img src="img/13.jpg" width="150" height"94" alt="" />
+ <img src="img/14.jpg" width="150" height"94" alt="" />
+ <img src="img/15.jpg" width="150" height"94" alt="" />
+ <img src="img/16.jpg" width="150" height"94" alt="" />
+ <img src="img/17.jpg" width="150" height"94" alt="" />
+ <img src="img/18.jpg" width="150" height"94" alt="" />
+ <img src="img/19.jpg" width="150" height"94" alt="" />
+
 
 </body>
