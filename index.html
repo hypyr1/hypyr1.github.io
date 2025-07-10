@@ -84,6 +84,15 @@ h1 {
   text-align: center;
 }
 
+
+.active {
+  color: #ccc;
+}
+
+.active:hover {
+text-decoration: none;
+}
+
 /* set height and width to the biggest slide in the series */
 
 #slideshow {
@@ -209,7 +218,7 @@ else {
 <div id="enbar" class="lang en" style="display: block;">
 
 <img src="img/eng.png" width="40px" height="40px"/>
-<span>English</span>
+<span class="active">English</span>
 
 <a href="#" onclick="toggleVisibility('es')"><img src="img/esp.png" width="40px" height="40px"/>
 <span>Haga clic aquí para español</span></a>
@@ -223,7 +232,7 @@ else {
 <span>Click here for english</span></a>
 
 <img src="img/esp.png" width="40px" height="40px"/>
-<span>Español</span>
+<span class="active">Español</span>
 
 </div>
 
