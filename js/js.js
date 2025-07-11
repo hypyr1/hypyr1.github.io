@@ -3,9 +3,11 @@ window.onload = function() {
   const url = window.location.href;
   const searchString = "es"; 
 
-alert('yo');
+
 
   if (url.indexOf(searchString) !== -1) {
+
+alert('yo');
    
 const esbar = document.getElementById("esbar");
 const enbar = document.getElementById("enbar");
