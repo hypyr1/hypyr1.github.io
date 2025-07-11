@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html>
+  
+  <head>
+    <title>
+      Terrazas Playa Blanca
+    </title>
+    <link rel="stylesheet" href="css/css.css">
+    <script type="text/javascript" src="js/js.js">
+    </script>
+  </head>
+  
+  <body>
+    <div id="enbar" class="lang en" style="display: block;">
+      <a href="#" onclick="toggleVisibility('es')">
+        <img src="img/esp.png" width="40px" height="40px" />
+        <span>
+          Clic aquí para español
+        </span>
+      </a>
+    </div>
+    <div id="esbar" class="lang es" style="display: none;">
+      <a onclick="toggleVisibility('en')">
+        <img src="img/eng.png" width="40px" height="40px" />
+        <span>
+          Click here for english
+        </span>
+      </a>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <h1 id="h1en" class="en" style="display: block;">
+      Playa Blanca Panama Apartment for Sale with Amazing View
+    </h1>
+    <h1 id="h1es" class="es" style="display: none;">
+      Apartamento en Venta Terrazas, Playa Blanca, Panamá con Vista Hermosa
+    </h1>
+    <div id="slideshow">
+      <div class="slide-wrapper">
+        <div class="slide">
+          <img src="img/01.jpg" width="100%" height="100%">
+          .
+        </div>
+        <div class="slide">
+          <img src="img/02.jpg" width="100%" height="100%">
+          .
+        </div>
+        <div class="slide">
+          <img src="img/02.5.jpg" width="100%" height="100%">
+          .
+        </div>
+        <div class="slide">
+          <img src="img/04.jpg" width="100%" height="100%">
+          .
+        </div>
+      </div>
+    </div>
+    <div id="entext" class="en" style="display: block;">
+      <p>
+        <a href="gallery.html">
+          View photos and video
+        </a>
+      </p>
+      <p>
+        Contact
+        <img src="img/email.PNG" class="email" />
+        for more information.
+      </p>
+    </div>
+    <div id="estext" class="es" style="display: none;">
+      <p>
+        <a href="gallery.html?es">
+          Ver fotos y videos
+        </a>
+      </p>
+      <p>
+        <p>
+          Envíe un correo electrónico a
+          <img src="img/email.PNG" class="email" />
+          para obtener más información.
+        </p>
+    </div>
+  </body>
 
-<head>
-
-<title>Terrazas Playa Blanca</title>
-
-
-<link rel="stylesheet" href="css/css.css">
-
-
-<script type="text/javascript" src="js/js.js"></script>
-
-
-
-</head>
-
-
-
-<body>
-
-<div id="enbar" class="lang en" style="display: block;">
-
-
-
-<a href="#" onclick="toggleVisibility('es')"><img src="img/esp.png" width="40px" height="40px"/>
-<span>Clic aquí para español</span></a>
-
-</div>
-
-
-<div id="esbar" class="lang es" style="display: none;">
-
-<a onclick="toggleVisibility('en')"><img src="img/eng.png" width="40px" height="40px"/>
-<span>Click here for english</span></a>
-
-
-
-</div>
-
-<br/>
-<br/>
-<br/>
-
-<h1 id="h1en" class="en" style="display: block;">Playa Blanca Panama Apartment for Sale with Amazing View</h1>
-<h1 id="h1es" class="es" style="display: none;">Apartamento en Venta Terrazas, Playa Blanca, Panamá con Vista Hermosa</h1>
-
-<div id="slideshow">
-  <div class="slide-wrapper">
-    <div class="slide"><img src="img/01.jpg" width="100%" height="100%">.</div>
-    <div class="slide"><img src="img/02.jpg" width="100%" height="100%">.</div>
-    <div class="slide"><img src="img/02.5.jpg" width="100%" height="100%">.</div>
-    <div class="slide"><img src="img/04.jpg" width="100%" height="100%">.</div>
-  </div>
-</div>
-
-<div id="entext" class="en" style="display: block;">
-<p><a href="gallery.html">View photos and video</a></p>
-  <p>Contact <img src="img/email.PNG" class="email" /> for more information.</p>
-</div>
-
-<div id="estext" class="es" style="display: none;">
-  <p><a href="gallery.html?es">Ver fotos y videos</a></p>
-  <p><p>Envíe un correo electrónico a <img src="img/email.PNG" class="email"/> para obtener más información.</p>
-
-</div>
-
-
-
-</body>
 </html>

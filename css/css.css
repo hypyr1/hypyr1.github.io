@@ -1,27 +1,19 @@
-
-
-
-
 body {
   font-family: arial, sans-serif;
   color: #ccc;
   margin: 0;
   background: #000;
-
 }
-
 
 a {
-
-color: red;
-text-decoration: none;
-
+  color: red;
+  text-decoration: none;
 }
 
-a:hover, a span:hover {
- color: green;
-text-decoration: underline;
-
+a:hover,
+a span:hover {
+  color: green;
+  text-decoration: underline;
 }
 
 .lang {
@@ -38,8 +30,6 @@ text-decoration: underline;
   color: #fff;
   padding-left: 10px;
   margin-top: -10px;
-  
-
 }
 
 .lang span {
@@ -47,7 +37,6 @@ text-decoration: underline;
   float: right;
   padding: 0 0 10px 10px;
   color: #fff;
-
 }
 
 .lang span:hover {
@@ -56,80 +45,64 @@ text-decoration: underline;
 
 .lang span.active {
   color: #ccc !important;
-
 }
-
 
 .lang span.active:hover {
   text-decoration: none !important;
 }
-
 
 h1 {
   color: #fff !important;
   margin: 40px auto 20px;
   padding: 0;
   text-align: center;
-  clear:both;
+  clear: both;
 }
 
 .es {
-
   color: #ccc !important;
   margin: 20px auto;
   text-align: center;
-
 }
 
 .en {
-
   color: #ccc !important;
   margin: 20px auto;
   text-align: center;
 }
 
-a:hover
-
-.active {
+a:hover .active {
   color: #ccc !important;
 }
 
 .active:hover {
-text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .email {
-position: relative;
-top: 4px;
+  position: relative;
+  top: 4px;
 }
 
-
-
-
 table {
-margin: 40px auto;
-text-align: center;
-
+  margin: 40px auto;
+  text-align: center;
 }
 
 td {
- padding: 10px;
+  padding: 10px;
 }
 
 li {
-display: block;
-float: left;
-padding-right: 10px;
-
+  display: block;
+  float: left;
+  padding-right: 10px;
 }
 
 #gallery-intro {
   margin: 0 auto;
   text-align: center;
-
-
- }
-
+}
 
 /* set height and width to the biggest slide in the series */
 
@@ -139,7 +112,6 @@ padding-right: 10px;
   height: 480px;
   width: 640px;
   margin: 0 auto;
-
 }
 
 .slide-wrapper {
@@ -155,9 +127,7 @@ padding-right: 10px;
   width: 640px;
   background: #000;
   color: #000;
-
 }
-
 
 /* repeat .slide:nth-child for each slide to specify individual styles for each slide 
 
@@ -179,13 +149,26 @@ padding-right: 10px;
 
 */
 
-
 @-webkit-keyframes slide {
-  20% {margin-left: 0px;}
-  30% {margin-left: -640px;} /* equal to slide width */
-  50% {margin-left: -640px;} /* equal to slide width */
-  60% {margin-left: -1280px;} /* equal to slide width x 2 */
-  70% {margin-left: -1280px;} /* equal to slide width x 2 */
-  80% {margin-left: -1920px;} /* equal to slide width x 3 */
-  90% {margin-left: -1920px;} /* equal to slide width x 3 */
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -640px;
+  } /* equal to slide width */
+  50% {
+    margin-left: -640px;
+  } /* equal to slide width */
+  60% {
+    margin-left: -1280px;
+  } /* equal to slide width x 2 */
+  70% {
+    margin-left: -1280px;
+  } /* equal to slide width x 2 */
+  80% {
+    margin-left: -1920px;
+  } /* equal to slide width x 3 */
+  90% {
+    margin-left: -1920px;
+  } /* equal to slide width x 3 */
 }
