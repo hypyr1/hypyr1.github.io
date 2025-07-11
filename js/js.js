@@ -3,6 +3,8 @@ window.onload = function() {
   const url = window.location.href;
   const searchString = "es"; 
 
+alert('yo');
+
   if (url.indexOf(searchString) !== -1) {
    
 const esbar = document.getElementById("esbar");
@@ -26,10 +28,6 @@ const entext = document.getElementById("entext");
 function toggleVisibility(elementId) {
 
 
-
-
-
-  
 
   if (elementId === 'es') {
 
