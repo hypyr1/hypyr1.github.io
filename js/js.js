@@ -1,5 +1,5 @@
 
-window.onload = function() {
+body.onload = function() {
   const url = window.location.href;
   const searchString = "es"; 
 
@@ -7,7 +7,6 @@ window.onload = function() {
 
   if (url.indexOf(searchString) !== -1) {
 
-alert('yo');
    
 const esbar = document.getElementById("esbar");
 const enbar = document.getElementById("enbar");
