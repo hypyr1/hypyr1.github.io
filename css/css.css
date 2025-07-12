@@ -99,6 +99,14 @@ li {
   padding-right: 10px;
 }
 
+ul.list li {
+	display: inline;
+	float: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
 #gallery-intro {
   margin: 0 auto;
   text-align: center;
