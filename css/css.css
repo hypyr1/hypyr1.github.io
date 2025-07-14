@@ -92,7 +92,11 @@ td {
   padding: 10px;
 }
 
-
+ul {
+clear: both;
+text-align: left;
+margin: 0;
+}
 
 
 #gallery-intro {
