@@ -6,7 +6,79 @@
       Terrazas Playa Blanca
     </title>
     <link rel="stylesheet" href="css/css.css">
-    <script type="text/javascript" src="js/js.js">
+    <script type="text/javascript">
+
+
+   body.onload = function () {
+
+    const url = window.location.href;
+    const searchString = "es";
+
+
+    if (url.indexOf(searchString) !== -1) {
+
+
+document.getElementsByClassName('es')[0].setAttribute("style", "display:block;");
+
+
+     //   const esbar = document.getElementById("esbar");
+    //    const enbar = document.getElementById("enbar");
+    //    const h1es = document.getElementById("h1es");
+    //    const h1en = document.getElementById("h1en");
+    //    const estext = document.getElementById("estext");
+    //    const entext = document.getElementById("entext");
+
+
+     //   esbar.style.display = "block";
+     //   enbar.style.display = "none";
+    //    h1es.style.display = "block";
+    //    h1en.style.display = "none";
+    //    estext.style.display = "block";
+    //    entext.style.display = "none";
+
+    }
+};
+
+function toggleVisibility(elementId) {
+
+
+
+    if (elementId === 'es') {
+
+
+        const esbar = document.getElementById("esbar");
+        const enbar = document.getElementById("enbar");
+        const h1es = document.getElementById("h1es");
+        const h1en = document.getElementById("h1en");
+        const estext = document.getElementById("estext");
+        const entext = document.getElementById("entext");
+
+
+        esbar.style.display = "block";
+        enbar.style.display = "none";
+        h1es.style.display = "block";
+        h1en.style.display = "none";
+        estext.style.display = "block";
+        entext.style.display = "none";
+
+
+    } else {
+
+        esbar.style.display = "none";
+        enbar.style.display = "block";
+        h1es.style.display = "none";
+        h1en.style.display = "block";
+        estext.style.display = "none";
+        entext.style.display = "block";
+
+
+    }
+
+
+
+}
+
+
     </script>
   </head>
   
@@ -64,7 +136,7 @@
       </p>
       <p>
         Contact
-        <img src="img/em.PNG" class="email" />
+        <img src="img/em.png" class="email" />
         for more information.
       </p>
 
@@ -104,7 +176,7 @@
       <p>
         <p>
           Envíe un correo electrónico a
-          <img src="img/email.PNG" class="email" />
+          <img src="img/em.png" class="email" />
           para obtener más información.
         </p>
 
