@@ -34,7 +34,7 @@ a span:hover {
 }
 
 .lang span {
-  font-size: larger !important;
+  font-size: 150% !important;
   display: block;
   float: right;
   padding: 0 0 10px 10px;
@@ -102,7 +102,7 @@ margin: 0;
 #gallery-intro {
   margin: 0 auto;
   text-align: center;
-  font-size: larger;
+  font-size: 150% !important;
 }
 
 /* set height and width to the biggest slide in the series */
