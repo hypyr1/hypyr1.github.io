@@ -33,6 +33,7 @@ a span:hover {
 }
 
 .lang span {
+  font-family: arial, sans-serif;
   display: block;
   float: right;
   padding: 0 0 10px 10px;

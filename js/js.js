@@ -1,4 +1,4 @@
-body.onload = function () {
+window.onload = function () {
 
     const url = window.location.href;
     const searchString = "es";
