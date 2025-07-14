@@ -81,10 +81,7 @@ a:hover .active {
   text-decoration: none !important;
 }
 
-.email {
-  position: relative;
-  top: 4px;
-}
+
 
 table {
   margin: 40px auto;
@@ -95,11 +92,6 @@ td {
   padding: 10px;
 }
 
-li {
-  display: block;
-  float: left;
-  padding-right: 10px;
-}
 
 
 
@@ -133,25 +125,7 @@ li {
   color: #000;
 }
 
-/* repeat .slide:nth-child for each slide to specify individual styles for each slide 
 
-.slide:nth-child(1) {
-  background: #D93B65;
-}
-
-.slide:nth-child(2) {
-  background: #037E8C;
-}
-
-.slide:nth-child(3) {
-  background: #36BF66;
-}
-
-.slide:nth-child(4) {
-  background: #D9D055;
-}
-
-*/
 
 @-webkit-keyframes slide {
   20% {

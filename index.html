@@ -9,80 +9,80 @@
     <script type="text/javascript">
 
 
-   body.onload = function () {
+      function setElementOnLoad() {
 
-    const url = window.location.href;
-    const searchString = "es";
-
-
-    if (url.indexOf(searchString) !== -1) {
+       const url = window.location.href;
+       const searchString = "es";
 
 
-document.getElementsByClassName('es')[0].setAttribute("style", "display:block;");
+       if (url.indexOf(searchString) !== -1) {
 
 
-     //   const esbar = document.getElementById("esbar");
-    //    const enbar = document.getElementById("enbar");
-    //    const h1es = document.getElementById("h1es");
-    //    const h1en = document.getElementById("h1en");
-    //    const estext = document.getElementById("estext");
-    //    const entext = document.getElementById("entext");
+   document.getElementsByClassName('es')[0].setAttribute("style", "display:block;");
 
 
-     //   esbar.style.display = "block";
-     //   enbar.style.display = "none";
-    //    h1es.style.display = "block";
-    //    h1en.style.display = "none";
-    //    estext.style.display = "block";
-    //    entext.style.display = "none";
-
-    }
-};
-
-function toggleVisibility(elementId) {
+        //   const esbar = document.getElementById("esbar");
+       //    const enbar = document.getElementById("enbar");
+       //    const h1es = document.getElementById("h1es");
+       //    const h1en = document.getElementById("h1en");
+       //    const estext = document.getElementById("estext");
+       //    const entext = document.getElementById("entext");
 
 
+        //   esbar.style.display = "block";
+        //   enbar.style.display = "none";
+       //    h1es.style.display = "block";
+       //    h1en.style.display = "none";
+       //    estext.style.display = "block";
+       //    entext.style.display = "none";
 
-    if (elementId === 'es') {
+       }
+   };
 
-
-        const esbar = document.getElementById("esbar");
-        const enbar = document.getElementById("enbar");
-        const h1es = document.getElementById("h1es");
-        const h1en = document.getElementById("h1en");
-        const estext = document.getElementById("estext");
-        const entext = document.getElementById("entext");
-
-
-        esbar.style.display = "block";
-        enbar.style.display = "none";
-        h1es.style.display = "block";
-        h1en.style.display = "none";
-        estext.style.display = "block";
-        entext.style.display = "none";
-
-
-    } else {
-
-        esbar.style.display = "none";
-        enbar.style.display = "block";
-        h1es.style.display = "none";
-        h1en.style.display = "block";
-        estext.style.display = "none";
-        entext.style.display = "block";
-
-
-    }
+   function toggleVisibility(elementId) {
 
 
 
-}
+       if (elementId === 'es') {
+
+
+           const esbar = document.getElementById("esbar");
+           const enbar = document.getElementById("enbar");
+           const h1es = document.getElementById("h1es");
+           const h1en = document.getElementById("h1en");
+           const estext = document.getElementById("estext");
+           const entext = document.getElementById("entext");
+
+
+           esbar.style.display = "block";
+           enbar.style.display = "none";
+           h1es.style.display = "block";
+           h1en.style.display = "none";
+           estext.style.display = "block";
+           entext.style.display = "none";
+
+
+       } else {
+
+           esbar.style.display = "none";
+           enbar.style.display = "block";
+           h1es.style.display = "none";
+           h1en.style.display = "block";
+           estext.style.display = "none";
+           entext.style.display = "block";
+
+
+       }
+
+
+
+   }
 
 
     </script>
   </head>
-  
-  <body>
+
+  <body onload="setElementOnLoad()">
     <div id="enbar" class="lang en" style="display: block;">
       <a href="#" onclick="toggleVisibility('es')">
         <img src="img/esp.png" width="40px" height="40px" />
@@ -136,7 +136,7 @@ function toggleVisibility(elementId) {
       </p>
       <p>
         Contact
-        <img src="img/em.png" class="email" height="39" width="436" />  for more information.
+        <img src="img/em.png" class="email" height="20" width="218" />  for more information.
       </p>
 
 
@@ -179,7 +179,7 @@ function toggleVisibility(elementId) {
       <p>
         <p>
           Envíe un correo electrónico a
-      <img src="img/em.png" class="email" height="39" width="436" />
+      <img src="img/em.png" class="email" height="20" width="218" />
           para obtener más información.
         </p>
 
