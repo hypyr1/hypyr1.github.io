@@ -18,23 +18,23 @@
 
        if (url.indexOf(searchString) !== -1) {
 
-alert('boo');
-           const esbar = document.getElementById("esbar");
-           const enbar = document.getElementById("enbar");
-           const h1es = document.getElementById("h1es");
-           const h1en = document.getElementById("h1en");
            const estext = document.getElementById("estext");
            const entext = document.getElementById("entext");
 
-
-           esbar.style.display = "block";
-           enbar.style.display = "none";
-           h1es.style.display = "block";
-           h1en.style.display = "none";
            estext.style.display = "block";
            entext.style.display = "none";
 
        }
+       else {
+
+           estext.style.display = "none";
+           entext.style.display = "block";
+
+
+       }
+
+
+
    };
 
    function toggleVisibility(elementId) {
@@ -83,8 +83,8 @@ alert('boo');
   </head>
 
   <body onload="setElementOnLoad()">
-    <div id="gallery-intro">
-      <div id="entext" class="en" style="display: block;">
+    <div class="gallery-intro">
+      <div id="entext" class="en" style="display: none;">
         <p>
           <a href="index.html">
             Return to main page
