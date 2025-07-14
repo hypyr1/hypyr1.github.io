@@ -2,7 +2,7 @@ body {
   font-family: arial, sans-serif;
   color: #ccc;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   background: #000;
 }
 
@@ -102,6 +102,7 @@ margin: 0;
 #gallery-intro {
   margin: 0 auto;
   text-align: center;
+  font-size: larger;
 }
 
 /* set height and width to the biggest slide in the series */
